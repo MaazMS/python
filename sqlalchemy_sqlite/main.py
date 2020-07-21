@@ -1,6 +1,6 @@
 # from rest_app.dal import githubreo_sqlalchemy
 # Program entry point
-from sqlalchemydbEX import githubreo_sqlalchemy
+from sqlalchemy_sqlite import githubreo_sqlalchemy
 
 
 def main():
