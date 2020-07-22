@@ -32,14 +32,21 @@ in the backend.
 2. The application developer doesn’t normally deal with the job stores, executors or triggers directly.   
 3. scheduler provides the proper interface for adding, modifying and removing jobs.
     
+#### Trigger by data    
+It  is use when you want to run the job just once at a certain point of time.   
+The run_date can be given either as a date/datetime object or text (in the ISO 8601 format). 
+[example](https://github.com/MaazMS/python/tree/master/APSheduler/trigger_data)     
+
      
 Q1. what is BlockingScheduler.? 
-A scheduler that runs in the foreground/front.   
-  
-  
+1. A scheduler that runs in the foreground/front.   
+2. so when you call start() , the call never returns.    
+3. BlockingScheduler can be useful if you want to use APScheduler as a standalone scheduler (e.g. to build a daemon)     
+     
 Q2. what is BackgroundScheduler.?     
-A scheduler that runs in the background using a separate thread.        
-
+1. A scheduler that runs in the background using a separate thread.        
+2. BackgroundScheduler runs in a thread inside your existing application.   
+3.  Calling start() will start the scheduler and it will continue running after the call returns  
   
   
 Q3. what is AsyncIOScheduler.?    
@@ -52,4 +59,21 @@ Q4. what is coroutine.?
 A function  which can pause and resume its execution. that means `A` function  is start execution it call B function.   
 `B` function is executing it call the function `c` . Then c function is executing and complete and call function `b` .    
 function `b` is executing and complete and call function `A` .function `A` is executing and complete.    
+
+Q.5 why need MemoryJobStore
+If you always recreate your jobs at the start of your application, then you can probably go with default MemoryJobStore.   
+
+Q6. how a job persistence.
+If you need your jobs to persist over scheduler restarts or application crashes, then your choice SQLAlchemyJobStore.    
+(Stores jobs in a database table using SQLAlchemy. The table will be created if it doesn’t exist in the database.)        
+
+Q7. what is ThreadPoolExecutor.   
+The ThreadPoolExecutor manages a set of worker threads passing tasks to them as they become available for more work.   
+[example](https://www.youtube.com/watch?v=q6hxTYGbpDo)       
+
+Q8. what is ProcessPoolExecutor. ?    
+The ProcessPoolExecutor is use when we are indeed running our tasks across multiple processes.   
+[Example](https://tutorialedge.net/python/concurrency/python-processpoolexecutor-tutorial/)   
+
+
 
