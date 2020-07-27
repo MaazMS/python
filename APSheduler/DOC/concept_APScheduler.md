@@ -12,16 +12,36 @@ APScheduler has four kinds of components
   
 #### Triggers
 1 . Triggers contain the scheduling logic.   
-2. Each job has its own trigger which determines when the job should be run next.    
-3 .Beyond their initial configuration, triggers are completely stateless.        
+2. Each job has its own trigger which determines when the job should be run next.       
+3 .Beyond their initial configuration, triggers are completely stateless.  
+4. A trigger instructs the scheduler when is the next time a job should run.           
+
+for example    
+`def tick(parameter): print(parameter)`
+
+`scheduler.add_job(`
+ `   function,`
+    `args=(1, ),`
+  `  trigger='interval',`
+    `seconds=3 `
+`)`
+
+In the above example interval is the trigger.    
+if the job fires at "2000-01-01T00:00:00Z", then the trigger with 3 seconds as interval should report that the next time is "2000-01-01T00:00:03Z"   
 
     
 #### Job stores   
 1. Job stores don’t keep the job data in memory, but act as middlemen for saving, loading, updating and searching jobs   
 in the backend.    
-2. A job’s data is serialized when it is saved to a persistent job store, and deserialized when it’s loaded back from it.   
-3. Job stores must never be shared between schedulers      
-   
+2. A job’s data is serialized when it is saved to a persistent job store, and deserialized when it’s loaded back from it.      
+3. Job stores must never be shared between schedulers         
+4. If job is not stores in the database job states will be lost when the process restarts.      
+In below example, APScheduler adds a JobStore named sqlalchemy. The job added later chooses sqlalchemy as its JobStore.    
+The JobStore persists the job into an SQLite database.   
+`scheduler.add_jobstore('sqlalchemy', url='sqlite:////sched.db')`    
+`scheduler.add_job(function, args=(1, ), trigger='interval', seconds=3, jobstore='sqlalchemy')`  
+      
+      
 #### Executors   
 1. Executors are what handle the running of the jobs.      
 2. They do this typically by submitting the job to a thread or process pool.   
