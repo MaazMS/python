@@ -1,5 +1,6 @@
 from time import sleep
 import sqlalchemy as sa
+import json
 
 from apscheduler.schedulers.background import BackgroundScheduler
 
@@ -10,16 +11,29 @@ def alarm():
 
 if __name__ == '__main__':
     scheduler = BackgroundScheduler()
-    print("created scheduler")
 
     scheduler.add_jobstore('sqlalchemy', engine=engine)
-    print("Added jobstore")
-
 
     scheduler.start()
     print("Started scheduler")
+
     return_job=scheduler.add_job(alarm, 'interval', seconds=2)
     print(return_job)
+    print(type(return_job))
+
+
+    print(scheduler.get_jobs)
+    for job in scheduler.get_jobs():
+
+        job_details = dict()
+        job_details['name'] = "name: %s" % job.name
+        job_details['trigger'] = "trigger: %s" % job.trigger
+        job_details['next_run'] = "next_run: %s" % job.next_run_time
+        job_details['handler'] = "handler: %s" % job.func
+
+    job_details_json = json.dumps(job_details)
+    print(job_details_json)
+
     try:
         while True:
             sleep(1)
