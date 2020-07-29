@@ -12,7 +12,10 @@ def alarm():
 if __name__ == '__main__':
 
     scheduler = BackgroundScheduler()
+    print(type(scheduler))
     scheduler.add_jobstore('sqlalchemy', engine=engine)
+    print(engine)
+
     scheduler.start()
     return_job=scheduler.add_job(alarm, 'interval', seconds=2)
 
@@ -22,10 +25,13 @@ if __name__ == '__main__':
     job_details = {}
     for job in scheduler.get_jobs():
 
+        job_details['id'] = "%s" % job.id
         job_details['name'] = "%s" % job.name
         job_details['trigger'] = "%s" % job.trigger
         job_details['next_run'] = "%s" % job.next_run_time
         job_details['handler'] = "%s" % job.func
+        job_details['executor'] = "%s" % job.executor
+
 
     print(job_details)
 
@@ -37,3 +43,7 @@ if __name__ == '__main__':
             sleep(1)
     except (KeyboardInterrupt, SystemExit):
         pass
+
+
+#     job_details['status'] = "%s" % job.status
+# AttributeError: 'Job' object has no attribute 'status
