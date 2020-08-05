@@ -27,6 +27,10 @@ select_rows = session.query(string_datatime).order_by(desc(string_datatime.id))
 for _row in select_rows.all():
     print(_row.id, _row.name, _row.created)
 
+print("\n----> last row  order_by(desc(id)):")
+select_rows = session.query(string_datatime).order_by(desc(string_datatime.id))
+_row =select_rows.first()
+print(_row.id, _row.name, _row.created)
 
 print("\n----> EQUAL:")
 select_rows = session.query(string_datatime).filter(string_datatime.id == 2)
@@ -72,3 +76,4 @@ print("\n----> LIKE")
 select_rows = session.query(string_datatime).filter(string_datatime.name.like('%name%'))
 for _row in select_rows.all():
     print(_row.name, _row.created)
+
