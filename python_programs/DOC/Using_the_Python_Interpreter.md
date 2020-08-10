@@ -1,5 +1,5 @@
 ## Using the Python Interpreter   
-
+![](https://miro.medium.com/max/569/0*qPZqO7mw6RMsGt7B)
 Q1. what is interpreter.?    
 An interpreter is a kind of program that executes other programs. When you write Python programs , it converts source    
 code written by the developer into intermediate language which is again translated into the native language / machine    
