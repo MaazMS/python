@@ -21,7 +21,7 @@ division = dev_number1 / dev_number2
 print(division)
 
 # floor division of two number
-# floor division get an integer result
+# floor division get an integer result (discarding any fractional result)
 
 fdev_number1 = 10
 fdev_number2 = 2
