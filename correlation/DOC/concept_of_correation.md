@@ -20,7 +20,6 @@ what is Correlation.?
 Example : When data is represented in the form of a table, the rows of that table are usually the observations.             
 ` features` : The properties or attribute of those observation.    
 Example : Table of columns are the features.        
-Name	Years of Experience	Annual Salary
 
 ![](https://files.realpython.com/media/py-corr-1.d13ed60a9b91.png)
 `Negative correlation (red dots)`: In the plot on the left, the y values tend to decrease as the x values increase. This    
@@ -36,6 +35,8 @@ which occurs when an association between two features is not obvious or is hardl
 illustrates strong positive correlation, which occurs when large values of one feature correspond to large values of the          
 other, and vice versa.    
   
+**Note**    
+1. That the correlation of a variable with itself is 1. For that reason all the diagonal values are 1.    
 
 Methods for correlation   
 1. `Pearson’s` coefficient measures linear correlation.    
@@ -53,4 +54,6 @@ data set.
 
 Not : corr() is used to find the pairwise correlation of all columns in the dataframe. For any non-numeric data type columns in the dataframe it is ignored.   
 
+what is subplots? 
+ Create a figure and a set of subplots
 
