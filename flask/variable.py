@@ -7,9 +7,9 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/Accept_dynamic_variable/<name>')
-def hello_world(name):
-    return 'Hello %s !' % name
+@app.route('/Accept_dynamic_variable/<name1><name2>')
+def hello_world(name1,name2):
+    return 'two name %s%S'% name1 %name2
 
 
 if __name__ == '__main__':

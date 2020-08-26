@@ -40,7 +40,7 @@ integers can be of any length,
 floating-point number is accurate only up to 15 decimal places **(the 16th place is inaccurate)**.   
 example of floating number   
       
-| input | output     
+input | output     
 | --- | --- |     
 | 1\.1234567890123450    | 1\.123456789012345     |   
 | 1\.1234567890123451    | 1\.123456789012345     |

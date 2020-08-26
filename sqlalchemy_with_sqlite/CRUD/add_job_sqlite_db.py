@@ -9,6 +9,8 @@ engine = sa.create_engine('sqlite:///add_job_sqlite_db.sqlite')
 def alarm():
     print('Alarm')
 
+
+
 if __name__ == '__main__':
 
     scheduler = BackgroundScheduler()
@@ -17,8 +19,7 @@ if __name__ == '__main__':
     print(engine)
 
     scheduler.start()
-    return_job=scheduler.add_job(alarm, 'interval', seconds=2)
-
+    return_job=scheduler.add_job(alarm, 'interval', seconds=2, )
     print(return_job)
     print(type(return_job))
 
@@ -31,7 +32,6 @@ if __name__ == '__main__':
         job_details['next_run'] = "%s" % job.next_run_time
         job_details['handler'] = "%s" % job.func
         job_details['executor'] = "%s" % job.executor
-
 
     print(job_details)
 

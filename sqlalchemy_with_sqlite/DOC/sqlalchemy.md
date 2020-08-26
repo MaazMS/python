@@ -5,7 +5,7 @@ Q2. What is full form of ORM ?
 ORM is stands for object relational model.   
 Q3. What is ORM. ?      
 ORM is programming technique for converting data between incompatible type systems in relational databases and          
-object-oriented programming languages.      
+object-oriented programming languages.        
 ![](https://miro.medium.com/max/700/1*9TZHTGKjIyUOAvmQkV1RNA.png)    
 Q4. Feature of ORM. ?   
 a. Offer a uniform object oriented interface for the progarammers.     

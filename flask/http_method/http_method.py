@@ -15,5 +15,6 @@ def login():
     else:
         user = request.args.get('nm')
         return redirect(url_for('user_name', name=user))
+
 if __name__ == '__main__':
     app.run(debug = True)

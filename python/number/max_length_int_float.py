@@ -27,7 +27,6 @@ print("float number seven  ",float_number7)
 
 float_number8 = 1.1234567890123458
 print("float number eight  ",float_number8)
-
 float_number9 = 1.1234567890123459
 print("float number nine   ",float_number9)
 

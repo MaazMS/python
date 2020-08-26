@@ -10,13 +10,14 @@ It is expressed in the form a + bi.
     
 * list   
 computer definition :     
-    A list is an abstract data type that represents a countable number od ordered values. where the same value   
-    may occur more then once. 
+    A list is an abstract data type that represents a countable number odordered values.   
+    where the same value may occur more then once.           
+python definition:    
     A list is an ordered set of values, where each value is identified by an index. The values that make up a list are   
     called its elements.[more](http://www.openbookproject.net/thinkcs/python/english2e/ch09.html) 
         
 * tuple   
-A tuple is a collection of objects which ordered and immutable. Tuples are sequences, just like lists.  
+A tuple is a collection of objects which ordered and immutable/not-change.Tuples are sequences, just like lists.  
 The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use  
 parentheses, whereas lists use square brackets.   
    
@@ -33,6 +34,6 @@ chnageable mean you can chnage the value of dictionary.
 * set  
 Math definition. 
     A set is defined as an unordered collection of distinct elements of the same type.   
-   
+python definition:     
 A Set is an unordered collection data type that is iterable, mutable/changed and has no duplicate elements.    
 

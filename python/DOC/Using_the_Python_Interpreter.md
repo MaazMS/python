@@ -7,8 +7,8 @@ language that is executed.
 
 **Explain**    
 
-**step1 :** Python first compiles your source code (.py file) into byte code. Compiled code is usually stored in .pyc files , and is   
-regenerated when the source code is updated.    
+**step1 :** Python first compiles your source code (.py file) into byte code. Compiled code is usually stored in .pyc   
+files , and is  regenerated when the source code is updated.         
 
    
 **step2 :** The bytecode (.pyc file) is loaded into the Python runtime and interpreted by a Python Virtual Machine ,    
