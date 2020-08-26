@@ -1,9 +1,9 @@
 # list of topic in this repository    
 ##### Topic contain 
-* basic concept 
-* basic example  
-* advance concept 
-* advance example     
+* basic concept doc
+* topic name example eg.  basic apscheduler program
+* advance concept doc
+* topic name  example  eg.  advance apscheduler program   
 
 # Topic   
 * [apscheduler](https://github.com/MaazMS/python/tree/master/APSheduler)   
