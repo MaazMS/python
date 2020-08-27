@@ -43,7 +43,7 @@ Methods for correlation
 1. `Pearson’s` coefficient measures linear correlation.    
 2. `Spearman` and `Kendall` coefficients compare the ranks of data.   
 
-example of positive correlation between rice cost and quantity in kg. [click here](https://github.com/MaazMS/python/blob/master/correlation/basic_correlation_concept_doc/Screenshot%20from%202020-08-27%2016-45-03.png)   
+example of positive correlation between rice cost and quantity in kg. [click here](https://github.com/MaazMS/python/blob/master/correlation/basic_correlation_concept_doc/images_of_correlation_concept/Screenshot%20from%202020-08-27%2016-45-03.png?raw=true)   
 
 what is `NaN` ?.   
 In pandas, a missing value is denoted by NaN.   
