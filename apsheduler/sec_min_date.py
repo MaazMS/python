@@ -14,7 +14,7 @@ def job_by_date():
 
 
 # call the task/job
-schedule.every(10).seconds.do(job_by_sec)
+schedule.every(1).seconds.do(job_by_sec)
 schedule.every(1).minutes.do(job_by_min)
 # schedule.every().day.at("11:00").do(job_by_date)
 

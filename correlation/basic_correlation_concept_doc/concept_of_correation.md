@@ -38,9 +38,12 @@ other, and vice versa.
 **Note**    
 1. That the correlation of a variable with itself is 1. For that reason all the diagonal values are 1.    
 
+
 Methods for correlation   
 1. `Pearson’s` coefficient measures linear correlation.    
 2. `Spearman` and `Kendall` coefficients compare the ranks of data.   
+
+example of positive correlation between rice cost and quantity in kg.   
 
 what is `NaN` ?.   
 In pandas, a missing value is denoted by NaN.   

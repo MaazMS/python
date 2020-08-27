@@ -10,7 +10,7 @@ def tick():
 
 if __name__ == '__main__':
     scheduler = BackgroundScheduler()
-    scheduler.add_job(tick, 'interval', seconds=1)
+    scheduler.add_job(tick)
     scheduler.start()
 
     try:

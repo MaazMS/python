@@ -93,7 +93,4 @@ The ThreadPoolExecutor manages a set of worker threads passing tasks to them as 
 
 Q8. what is ProcessPoolExecutor. ?    
 The ProcessPoolExecutor is use when we are indeed running our tasks across multiple processes.   
-[Example](https://tutorialedge.net/python/concurrency/python-processpoolexecutor-tutorial/)   
-
-
-
+[Example](https://tutorialedge.net/python/concurrency/python-processpoolexecutor-tutorial/)          
