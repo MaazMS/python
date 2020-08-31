@@ -3,16 +3,7 @@
 Q1. what is interpreter.?    
 An interpreter is a kind of program that executes other programs. When you write Python programs , it converts source    
 code written by the developer into intermediate language which is again translated into the native language / machine    
-language that is executed.    
-
-**Explain**    
-
-**step1 :** Python first compiles your source code (.py file) into byte code. Compiled code is usually stored in .pyc   
-files , and is  regenerated when the source code is updated.         
-
-   
-**step2 :** The bytecode (.pyc file) is loaded into the Python runtime and interpreted by a Python Virtual Machine ,    
-which is a piece of code that reads each instruction in the bytecode and executes whatever operation is indicated.     
+language that is executed.       
 
 Q2. what is byte code.?      
 byte code is a lower-level, and platform-independent, representation of your source code.        
@@ -24,6 +15,16 @@ Technically, it's just the last step of what is called the Python interpreter.
 Q4. what is virtual machine. ?   
 simple definition is that **a machine that built from software**     
 [real life example](https://tech.blog.aknin.name/2010/07/04/pythons-innards-for-my-wife/)      
+
+**Explain**    
+
+**step1 :** Python first compiles your source code (.py file) into byte code. Compiled code is usually stored in .pyc   
+files , and is  regenerated when the source code is updated.         
+
+   
+**step2 :** The bytecode (.pyc file) is loaded into the Python runtime and interpreted by a Python Virtual Machine ,    
+which is a piece of code that reads each instruction in the bytecode and executes whatever operation is indicated.     
+
 
 
 
