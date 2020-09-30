@@ -37,3 +37,9 @@ print('division_num_to_complex', division_num_to_complex)
 #  TypeError: can't convert complex to float
 # complex_to_int = int(complex_number)
 # complex_to_float = float(complex_number)
+
+number_in_string = "123"
+string_to_int = int(number_in_string)
+print("string_to_int",string_to_int)
+#  number_in_string = "123"
+# ValueError: invalid literal for int() with base 10: '123f'
