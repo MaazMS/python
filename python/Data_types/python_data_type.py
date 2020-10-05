@@ -31,6 +31,6 @@ for i in number_sequence:    # example of range
 person = {"name" : "Maaz", "gender" : "Male"}  # Data type is dictionary
 print(type(person))
 
-city = {"pune", "Mumbai"}  # data type is set
+city = {"pune", "Mumbai"}  # data type is set_type_data
 print(type(city))
 

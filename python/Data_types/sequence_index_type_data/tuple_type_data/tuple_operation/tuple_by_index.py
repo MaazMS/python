@@ -1,0 +1,20 @@
+_tuple = ('a', 'b', 'c', 'd', 'e','f')
+
+print("posite index from left to right ")
+print("index [0]", _tuple[0])
+print("index [1]", _tuple[1])
+print("index [2]", _tuple[2])
+print("index [3]", _tuple[3])
+print("index [4]", _tuple[4])
+print("index [5]", _tuple[5])
+
+print("posite index from right to left ")
+print("index [-1]", _tuple[-1])
+print("index [-2]", _tuple[-2])
+print("index [-3]", _tuple[-3])
+print("index [-4]", _tuple[-4])
+print("index [-5]", _tuple[-5])
+print("index [-6]", _tuple[-6])
+
+print("start index : end_element (element count start by 1) : step (step-1) ")
+print("tuple[0::2]",_tuple[0::2]) # ('a', 'c', 'e')

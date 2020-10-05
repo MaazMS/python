@@ -1,3 +1,15 @@
+Built-in Data Types in python   
+
+category | data type|  
+--- | --- | 
+Text Type | str  
+Numeric Types |	int, float, complex
+Sequence Types|	list, tuple, range
+Mapping Type|	dict
+Set Types|	set, frozenset
+Boolean Type:|	bool
+Binary Types|	bytes, bytearray, memoryview
+
 * what is type.   
 type() method returns class type of the argument(object) passed as parameter.    
 Python have a built-in method called as type which generally come in handy while figuring out the type of      

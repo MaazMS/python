@@ -2,9 +2,10 @@ int_number = 10
 float_number = 10.9
 devision_number  = 3 / 2
 complex_number = 1 + 2j
+int_number_in_string = "123"
+float_number_in_string = "123.9"
 
-
-# convert int to float and complex
+# convert integer  to float and complex
 
 int_to_float = float(int_number)
 int_to_complex = complex(int_number)
@@ -38,8 +39,13 @@ print('division_num_to_complex', division_num_to_complex)
 # complex_to_int = int(complex_number)
 # complex_to_float = float(complex_number)
 
-number_in_string = "123"
-string_to_int = int(number_in_string)
+# convert string to int and float
+
+string_to_int = int(int_number_in_string)
+string_to_float = float(float_number_in_string)
 print("string_to_int",string_to_int)
+print("string_to_int",string_to_float)
+
+
 #  number_in_string = "123"
 # ValueError: invalid literal for int() with base 10: '123f'
