@@ -1,1 +1,0 @@
-** images related to this folder
