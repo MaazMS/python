@@ -1,8 +1,8 @@
 ### Python Documentation
 
 0. [Introduction](#Introduction)   
-1. [Concept Of Interpreter](#ConceptOfInterpreter)    
-2. [Commants and indentation](#Commantsandindentation)    
+1. [Concept Of Interpreter](#Concept-Of-Interpreter)    
+2. [Commants and indentation](#Commants-and-indentation)    
 3. [Datatypes]()    
 4. [Operators and Operands]()   
 5. [ Input and Output functions]()   
