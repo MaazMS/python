@@ -25,9 +25,7 @@ files , and is  regenerated when the source code is updated.
 **step2 :** The bytecode (.pyc file) is loaded into the Python runtime and interpreted by a Python Virtual Machine ,    
 which is a piece of code that reads each instruction in the bytecode and executes whatever operation is indicated.     
 
-
-
-
+* Note. More details about interpreter [here]()
 
 1. Invoking the Interpreter     
 The Python interpreter is usually installed as /usr/local/bin/python3.8. or to  start it by typing the command:   
