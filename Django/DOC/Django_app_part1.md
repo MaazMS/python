@@ -110,5 +110,20 @@ not return “Hello, world. You’re at the polls index.”
 1. polls/views.py how to add multiple views.   
 2. can we create multiple views.py ?  
 3. polls.urls.py what is the use of first argument of path('').   
-4. how to break down the url in `mywebsite/urls.py`. eg. polls/homepage. or polls/contact. etc.   
+4. how to break down the url in `mywebsite/urls.py`. eg. polls/homepage. or polls/contact. etc. 
+
+#### my problem solve question 3 and 4.    
+1. `mywebsite/urls.py` we use include `path('polls/', include('polls.urls'))` . polls is the base url means start url.   
+2.  polls/urls.py have url configuration. in path first argument is use after base url.  
+example  
+``` 
+urlpatterns = [
+    path('', views.index, name = 'index'),
+    path('homepage/', views.homepage, name= 'homepage' )
+]
+``` 
+`http://127.0.0.1:8020/polls/homepage/`  
+view.homepage is display **This is home page**   
+
+ 
    
