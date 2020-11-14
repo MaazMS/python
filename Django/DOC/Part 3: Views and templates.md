@@ -40,7 +40,8 @@ urlpatterns = [
 ```
 ##### Write views that actually do something  
 
-* There way to write view but the url configuration is same i.e `polls/urls.py`    
+* There way to write view but the url configuration is same i.e `polls/urls.py`   
+* This is common for there way to write view.      
 ```  
 # polls/urls.py 
 from django.urls import path
@@ -64,3 +65,25 @@ def index(request):
     output = ', '.join([q.question_text for q in latest_question_list])
     return HttpResponse(output)
 ```       
+2. view using template but use `from django.template import loader`  
+```   
+from django.template import loader  
+
+def index(request):
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    template = loader.get_template('polls/index.html')
+    context = {
+        'latest_question_list': latest_question_list,
+    }
+    return HttpResponse(template.render(context, request))
+```   
+3. view using template but use `from django.shortcuts import render`    
+```   
+from django.shortcuts import render  
+
+def index(request):
+    latest_question_list = Question.objects.order_by('-pub_date')[:5]
+    context = {'latest_question_list': latest_question_list}
+    return render(request, 'polls/index.html', context)
+
+```
