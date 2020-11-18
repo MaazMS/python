@@ -1,0 +1,27 @@
+<!-- It is inheritance parent class is base.html-->
+{% extends 'base.html' %}
+
+<!-- same code of  base.html except new content or tag add in between them -->
+ <!--      Base.html use anywhere  we use DRY = Don't repeat yourself       -->
+{% block content %}
+
+    <h2 style="text-align : center">{{ search | title }}</h2>
+    <div class="row">
+        {% for post in final_postings  %}
+             <div class="col s4">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="{{post.1}}"><img src="https://media.wired.com/photos/5ed06ca9fbf7b2147038a8a9/4:3/w_2132,h_1599,c_limit/Gear-New-Pet-1168772154.jpg" alt=""></a>
+                    </div>
+                    <div class="card-content">
+                        <p>{{post.0}}</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="/">View listing: Price {{post.2}} </a>
+                    </div>
+                </div>
+             </div>
+        {% endfor %}
+        </div>
+
+{% endblock content %}
