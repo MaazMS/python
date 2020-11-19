@@ -43,7 +43,38 @@ Methods for correlation
 1. `Pearson’s` coefficient measures linear correlation.    
 2. `Spearman` and `Kendall` coefficients compare the ranks of data.   
 
-example of positive correlation between rice cost and quantity in kg. [click here](https://github.com/MaazMS/python/blob/master/correlation/basic_correlation_concept_doc/images_of_correlation_concept/Screenshot%20from%202020-08-27%2016-45-03.png?raw=true)   
+example of correlation between rice cost and quantity in kg.     
+![](https://github.com/MaazMS/python/blob/master/correlation/basic_correlation_concept_doc/images_of_correlation_concept/Screenshot%20from%202020-08-27%2016-45-03.png?raw=true)     
+      
+In this graph the cost is increase and the quantity is decrease. This is called negative correlation       
+
+example of correaltion between onion and quantity in kg.      
+![](https://github.com/MaazMS/python/blob/master/correlation/basic_correlation_concept_doc/images_of_correlation_concept/Screenshot%20from%202020-08-27%2017-09-24.png?raw=true)    
+          
+This graph is not incease and not decrease there for no correlation between onion cost and quantity in kg.       
+   
+example of correlation between watch and quantity.      
+![](https://github.com/MaazMS/python/blob/master/correlation/basic_correlation_concept_doc/images_of_correlation_concept/Screenshot%20from%202020-08-27%2017-10-12.png?raw=true)    
+     
+In this graph cost in increase and quantity is aslo increase .There for it is positive correlation.      
+
+why wee need correlation formula.      
+![](https://github.com/MaazMS/python/blob/master/correlation/basic_correlation_concept_doc/images_of_correlation_concept/why_we_need_formula_of_correlation.png?raw=true)    
+    
+In this graph some statics say it is positive correlation and some say it is negative correlation.    
+That's why wee need some mathematical formula to solve this problem.   
+   
+formula of correlation coefficient 
+**first formula**   
+![](https://cdn1.byjus.com/wp-content/uploads/2019/06/word-image28.png)      
+      
+**second formula**   
+![](https://cdn1.byjus.com/wp-content/uploads/2019/02/Correlation-Coefficient-Formula.png)     
+     
+
+      
+
+
 
 what is `NaN` ?.   
 In pandas, a missing value is denoted by NaN.   

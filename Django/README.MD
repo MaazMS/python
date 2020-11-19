@@ -54,6 +54,42 @@ Projects | apps
  .|An app can be in multiple projects.
 
 #### Write your first view   
-1. polls/views.py write python code.     
-2. URL configuration.
-3. 
+1. polls/views.py write the view.   
+2. polls/urls.py URL configuration.(To call the view, we need to map it to a URL).   
+3. point the root URL configuration at the polls.urls module. In mywebsite/urls.py.       
+   
+**include()** function allows referencing other URLconfs. Whenever Django encounters include(), it chops/cut off whatever     
+part of the URL matched up to that point and sends the remaining string to the included URL configuration for further processing.    
+   
+
+**Note** http://localhost:8000/polls/ it return “Hello, world. You’re at the polls index.” and http://localhost:8000/     
+not return “Hello, world. You’re at the polls index.”   
+
+### admin interface     
+
+* Creating models   
+ models – essentially, your database layout, with additional metadata.   
+ 
+* Question and choice 
+ 
+Question | Choice 
+|--- | --- | 
+A Question has a question and a publication date.|  
+example question_text and pub_date. | Choice has two fields `text` of the choice and a `vote tally`   
+.| Question is reference in choice.   
+
+### create questions and choice   
+1. polls/models.py is add class question and choice.  
+2. mywebsite/settings.py `INSTALLED_APPS` variable add ` 'polls.apps.PollsConfig',`  
+3. run that command `python manage.py makemigrations polls` create Question and Choice.   
+**makemigrations** you’re telling Django that you’ve made some changes to your models (in this case, you’ve made new ones)    
+and that you’d like the changes to be stored as a migration.  
+
+very model have primary key.  
+difference between get and filter.   
+filter return single and multiple value.   
+get return single and multiple value give error.  
+
+#### Playing with the API  
+
+* Create a new Question.  

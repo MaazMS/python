@@ -35,6 +35,9 @@ print(result)
 ### map   
 1. map() function returns a map object(which is an iterator) of the results after applying the given function to each item of a given iterable.  
 2. The first parameter is the lambda expression and the second parameter is a sequence which in this case it is list.  
+3. The difference between `filter ` and `map` is the if use condition in map it return true and false.   
+eg `list(map( lambda  no : no % 2 == 0, ls))` it return true and false in list.  where the same program use filter return  
+list value.     
  ``` 
 Example   
 ls = [1, 2, 3, 4, 5, 6, 7, 8, 9]

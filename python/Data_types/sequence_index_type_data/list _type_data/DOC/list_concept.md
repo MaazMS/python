@@ -24,11 +24,12 @@ start_index : end element : number of step (number -1) `_string[0: 6 : 2]`
 8. index access left to right `_string[0]`  
 
 #### list function   
-1. **append** : insert element in list. Add element end of list. `eg. list.append('a')`   
+1. **append** : Add element end of list. `eg. list.append('a')`   
 2. **extend** : appending all the items from list.This allows you to join two lists together. `eg. extend.(['a', 'a'])`    
-3. **Inserts** : Inserts an item at a given position. but it not remove insert position element. `eg list.append('a')`   
-4. **remove**  : Removes the first item from the list. remove parameter is not optional  `eg list.remove(1)`   
-5. **pop**     : Removes the item at list and returns it without index and with index. `eg list.pop() or list.pop(1)`    
+3. **Inserts** : Inserts an item at a given position. but it not remove insert position element. `eg list1.insert(2,'a')`     
+`Note` : It take tow parameter first is index and second is value.    
+4. **remove**  : remove take item in the list as parameter and remove it. `eg list.remove(1)`   
+5. **pop**     : Removes the item in list without index and with index. `eg list.pop() or list.pop(1)`    
 `Note` : without index pop remove last item in list.   
 6. **clear**  : Removes all items from the list. Equivalent to del. `eg list.clear() or del list [0]`   
   

@@ -1,5 +1,5 @@
-# comments start with #
-# comments is use for code documentation
+# Commants and indentation start with #
+# Commants and indentation is use for code documentation
 
-# This is a comments
-print("The comments is start with #")
+# This is a Commants and indentation
+print("The Commants and indentation is start with #")

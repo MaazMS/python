@@ -1,12 +1,12 @@
 Built-in Data Types in python   
 
-category | data type|  
---- | --- | 
-Text Type | str  
-Numeric Types |	int, float, complex
-Sequence Types|	list, tuple, range
-Mapping Type|	dict
-Set Types|	set, frozenset
+category | data type|  hint
+--- | --- | --- |
+Text Type | str  | single, double and triple quote|
+Numeric Types |	int, float, complex | non-decimal, decimal, a + bj|
+Sequence/index Types|	list, tuple, range | list[] mutable/change, tuple()immutable/not-change, range()|
+Mapping/non-index Type|	dict | {} use key and value mutable/change.
+Set/non-index Types|	set, frozenset | {} immutable/not-change
 Boolean Type:|	bool
 Binary Types|	bytes, bytearray, memoryview
 

@@ -1,5 +1,6 @@
 ## Using the Python Interpreter   
-![](https://miro.medium.com/max/569/0*qPZqO7mw6RMsGt7B)
+![](https://miro.medium.com/max/569/0*qPZqO7mw6RMsGt7B)     
+       
 Q1. what is interpreter.?    
 An interpreter is a kind of program that executes other programs. When you write Python programs , it converts source    
 code written by the developer into intermediate language which is again translated into the native language / machine    
@@ -33,11 +34,11 @@ python3.8
 
 
 Typing an end-of-file character (Control-D on Unix, Control-Z on Windows) at the primary prompt causes the interpreter to   
-exit with a zero exit status. If that doesn’t work, you can exit the interpreter by typing the following command: quit().       
+exit with a zero exit status. If that doesn’t work, you can exit the interpreter by typing the following command: **quit().**           
 
-Control-p : It is use for previous command. (previous command which is store in history use by Control-P )
-Control-m : It is use go to next line. not like enter button. next line go without any execution command.    
-Control-l : It is use for clear all the command and go to first line.(clear all command)         
+Control-p : It is use for previous command. (previous command which is store in history use by Control-P).     
+Control-m : It is use go to next line. not like enter button. next line go without any execution command.      
+Control-l : It is use for clear all the command and go to first line.(clear all command).             
 
 
 

@@ -10,6 +10,7 @@ The command line arguments are those arguments that are passed when our Python p
 
 * python run time to our program through a list called `argv`.   
 * access the elements we can use `sys.argv` **eg. sys.argv[0]**       
+* by default  args take as string. need integer then use type cast. 
 
 
  ### pycharm setting for command line  
