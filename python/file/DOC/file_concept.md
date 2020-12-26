@@ -22,7 +22,7 @@ of the current contents.
 Opens a file for both writing and reading. Overwrites the existing file if the file exists. If the file does not exist,   
 creates a new file for reading and writing.  
 
-### R+ 
+### r+ 
 Opens a file for both appending and reading. The file pointer is at the end of the file if the file exists.  
 The file opens in the append mode. If the file does not exist, it creates a new file for reading and writing.    
 
