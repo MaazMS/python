@@ -71,8 +71,8 @@ class NaturalNumber:
 
 
 obj = NaturalNumber()
-# obj.natural_no_by_for()
-# obj.natural_no_by_while()
-# obj.natual_no_reverse()
-# obj.sum_avg_by_for()
+obj.natural_no_by_for()
+obj.natural_no_by_while()
+obj.natual_no_reverse()
+obj.sum_avg_by_for()
 obj.sum_avg_by_while()
