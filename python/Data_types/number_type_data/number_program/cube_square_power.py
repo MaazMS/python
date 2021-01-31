@@ -1,5 +1,4 @@
 class Cube_Square_Power:
-
     def cube(self):
 
         no = int(input("Enter number\t"))
@@ -18,8 +17,17 @@ class Cube_Square_Power:
 
         for i in range(1, exponent + 1):
             power = power * no
-        print("number is ",no,"\nnumber exponent is",exponent ,"\nnumber power is", power)
+        print(
+            "number is ",
+            no,
+            "\nnumber exponent is",
+            exponent,
+            "\nnumber power is",
+            power,
+        )
+
+
 obj = Cube_Square_Power()
-# obj.cube()
-# obj.square()
+obj.cube()
+obj.square()
 obj.power_by_for()
