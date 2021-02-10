@@ -98,7 +98,9 @@ print(num())
 ### Generators and yield
 1. Generators are functions that return a sequence of values but it uses a yield statement.  
 2. yield will take each value of x and it will store it in memory and at the end it will return the complete.  
-3. It is use for custom sequence. (create custom range).  
+3. It is use for custom sequence. (create custom range).    
+4. For large data iteration use generator which take one value at time.  
+5. yield is use to pause the function until success for iterator operation.    
 ``` 
 Example  
 def sequence(no1 , no2):
@@ -117,3 +119,6 @@ for number in result:
 ### package  
 1. A package is nothing but a collection of modules.  
 2. package is contain `__init__.py` without `__init__.py` it is not package.  
+
+### Iterator  
+1. Iterator in python is simple an object that can be return data one at a time while iterating over it.  
