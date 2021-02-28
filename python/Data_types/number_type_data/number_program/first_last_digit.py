@@ -1,3 +1,6 @@
+# find first digit of number using  //
+# find last digit of number using  %
+#
 class FirstLastDigitNumber:
 
     def find_first_digit_number(self):
