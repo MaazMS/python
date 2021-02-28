@@ -1,7 +1,7 @@
-#### what is command line argument  
+## what is command line argument  
 The command line arguments are those arguments that are passed when our Python program is run.   
 
-#### why use command line argument  
+## why use command line argument  
 1. pass file location  
 2. dynamically pass value to program.  
 3. database name  
@@ -13,10 +13,10 @@ The command line arguments are those arguments that are passed when our Python p
 * by default  args take as string. need integer then use type cast. 
 
 
- ### pycharm setting for command line  
+## pycharm setting for command line  
 RUN > Edit configurations > parameters give value
 
-### file name and location using command line argument  
+## file name and location using command line argument  
 ```` 
 import sys   
 ls = sys.argv 
