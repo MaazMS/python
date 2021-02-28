@@ -40,8 +40,6 @@ Control-p : It is use for previous command. (previous command which is store in 
 Control-m : It is use go to next line. not like enter button. next line go without any execution command.      
 Control-l : It is use for clear all the command and go to first line.(clear all command).             
 
-
-
 The interpreter operates somewhat like the Unix shell: when called with standard input connected to a tty device, it     
 reads and executes commands interactively; when called with a file name argument or with a file as standard input, it    
 reads and executes a script from that file.       
