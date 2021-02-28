@@ -1,3 +1,5 @@
+# count how many character in word.
+#
 class CharacterWord:
     def count_character(self):
 
