@@ -1,3 +1,5 @@
+# Natural numbers are a part of the number system which includes all the positive integers from 1 till infinity
+
 class NaturalNumber:
     def natural_no_by_for(self):
 
