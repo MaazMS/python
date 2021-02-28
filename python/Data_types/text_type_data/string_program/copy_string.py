@@ -1,3 +1,5 @@
+# copy one string to another string.
+#
 class CopyString:
     def copy_one_String_to_another_String(self):
 
@@ -12,7 +14,7 @@ class CopyString:
         s4 = ""
 
         for i in s1:
-            s4 = s4 + i
+            s4 = s4 + i  # s4 = i + s4 is reverse string
         print("Third way to copy string ", s2)
 
 
