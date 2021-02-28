@@ -1,5 +1,7 @@
+# count how many Vowels and  consonants in word.
+#
 class VowelsCOnsonant:
-    def count_Vowels(self):
+    def count_vowels(self):
 
         str1 = input("Please Enter Your Own String : ")
         vowels = 0
@@ -20,7 +22,7 @@ class VowelsCOnsonant:
                 vowels = vowels + 1
         print("Total Number of Vowels in this String = ", vowels)
 
-    def count_Consonants(self):
+    def count_consonants(self):
 
         str1 = input("Please Enter Your Own String : ")
         Consonants = 0
@@ -43,5 +45,5 @@ class VowelsCOnsonant:
 
 
 obj = VowelsCOnsonant()
-obj.count_Vowels()
-obj.count_Consonants()
+obj.count_vowels()
+obj.count_consonants()
