@@ -1,3 +1,5 @@
+# The factorial of a positive integer n, denoted by n!, is the product of all positive integers less than or equal to n.
+# Example  factorial of 6 is 1*2*3*4*5*6 = 720 .
 class FactorialNumber:
     def find_factorial_number(self):
 
