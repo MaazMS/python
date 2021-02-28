@@ -1,3 +1,7 @@
+# find cube of  cube = no * no * no
+# find square of sq = no * no
+# find power of number
+#
 class Cube_Square_Power:
     def cube(self):
 
