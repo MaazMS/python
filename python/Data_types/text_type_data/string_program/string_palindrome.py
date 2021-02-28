@@ -1,3 +1,5 @@
+# A string is said to be a palindrome if the string read from left to right is equal to the string read from right to left.
+#
 class PalindromeString:
     def palindrome_String(self):
 
@@ -13,7 +15,7 @@ class PalindromeString:
         s1 = input("Enter string")
         s2 = ""
         for i in s1:
-            s2 = i + s2
+            s2 = i + s2 # s2 = s2 + i is copy s1 to s2
 
         if s1 == s2:
             print("This is a Palindrome String")
