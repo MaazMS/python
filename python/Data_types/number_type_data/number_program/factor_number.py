@@ -1,3 +1,6 @@
+# A factor is a number that divides into another number exactly and without leaving a remainder.
+# factor of 6 is 1, 2, 3, 6
+#
 class FactorNumber:
     def find_factor_number(self):
 
