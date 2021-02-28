@@ -1,3 +1,6 @@
+# Armstrong number is a number that is equal to the sum of cubes of its digits
+#  153 is  Armstrong.
+#  1 + 125 + 27 = 153
 class Armstrong_Number:
     def find_armstrong_number(self):
 
