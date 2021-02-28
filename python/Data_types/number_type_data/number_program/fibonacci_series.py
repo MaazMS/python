@@ -1,3 +1,6 @@
+# The Fibonacci sequence is a series of numbers where a number is the addition of the last two numbers,
+# starting with 0, and 1. The Fibonacci Sequence: 0, 1, 1, 2, 3, 5, 8, 13.
+#
 class Fibonacci_Series:
     def find_fibonacci_series(self):
         n1, n2 = 0, 1
