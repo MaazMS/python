@@ -1,3 +1,5 @@
+# convert lower string to upper string and upper string to lower string
+#
 class LowerUpperString:
     def convert_lower_to_upper_string(self):
 
