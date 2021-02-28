@@ -1,3 +1,5 @@
+# count how many character is repeated in word.
+#
 class RepeatedCharacter:
     def count_first_occurrence(self):
 
