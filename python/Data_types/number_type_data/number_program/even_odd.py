@@ -1,3 +1,6 @@
+# no % 2 == 0 Even number
+# no % 2 != 0 odd number
+#
 class EvenOdd:
     def even_number(self):
 
