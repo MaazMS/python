@@ -1,3 +1,5 @@
+# Concatenate Strings means join strings.
+#
 class ConcatenateStrings:
     def concatenate_strings(self):
 
