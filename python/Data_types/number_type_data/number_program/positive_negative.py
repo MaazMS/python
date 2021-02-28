@@ -1,3 +1,5 @@
+# number greater then zero is Positive no.
+# number less then zero is Positive no.
 class PositiveNegativeNumbe:
 
     def positive_number(self):
