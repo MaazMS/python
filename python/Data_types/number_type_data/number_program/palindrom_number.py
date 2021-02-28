@@ -1,3 +1,4 @@
+# a number (such as 16461) that remains the same when its digits are reversed
 class PalindromeNumber:
 
     def find_palindrom_number(self):
