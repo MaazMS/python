@@ -30,9 +30,29 @@ book seats, baggage options, etc. The API then takes the airline’s response to
 
 [example](https://play.vidyard.com/Le2QkL3lixu3GmssEXYyLg.jpg?)    
 
-## What is REST API and RESTful API?  
+## What is REST API and RESTful API?(Representational State Transfer)    
 1. IT is an architectural guideline to developer web API.  
 1. The API which is developed using REST is known as REST API and RESTful API.  
 
 ## How REST web API work?  
-1. Client make 
+1. Client make HTTP Request to API.  
+1. API will communicate to web application/database(if needed)  
+1. Web Application/Database provides required data to API.   
+1. API return response data to client.  
+
+Note- Json data, XML data.   
+
+* CRUD Operation:    
+  
+Operation | HTTP Method | Description  
+|---|---|---|   
+Create | POST | Creating, Posting, Inserting Data,  
+READ | GET | Reading, Getting, Retrieving Data|  
+Update | PUT, PATCH | updating data, complete update using PUT, Partial  update PATCH  
+Delete | DELETE | Deleting Data.  
+
+## Example  
+`https://www.example.com/api/python_developer`  
+1. Base URL : `www.example.com/`  
+1. Naming convention : `api/`   
+1. Resource of API and End-Point : python_developer
