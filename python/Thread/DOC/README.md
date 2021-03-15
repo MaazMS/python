@@ -1,5 +1,6 @@
 ### Thread
-Python virtual machine behind the scenes uses a thread called the main thread to execute the code.  
+Python virtual machine behind the scenes uses a thread called the main thread to execute the code.    
+Definition: A thread is a single sequential flow of control within a program. 
 
 ### check main thread  
 ````  
@@ -61,10 +62,11 @@ t = Thread(target=obj.dispalynumber)
 t.start()
 ```   
 
-#### Multithreading in action     
+#### Multithreading in action    
+1. multiple threads running at the same time and performing different tasks in a single program.   
 1. create multiple thread   
-2. start all thread at a time.  
-3. thread are executing concurrently   
+1. start all thread at a time.  
+1. thread are executing concurrently   
 ``` 
 obj = myThread()
 t = Thread(target=obj.dispalynumber)
@@ -98,22 +100,21 @@ t2.start()
 t3.start()
 ```   
 #### Thread Synchronization   
-1. When multiple threads are accessing the same resources is called Synchronization.   
-2. lock an object, when a thread locks an object it enters into a room of its own. It will take that object and it will    
-own that object and only when that thread releases that object the other threads can use that object or resource.    
-3. This process of thread acquiring a lock and entering a room is also known as threat `mutex`.     
+1. When multiple threads are accessing the same resources is called Synchronization.      
+2. lock an object, when a thread locks an object it enters into a room of its own. It will take that object and it will      
+own that object and only when that thread releases that object the other threads can use that object or resource.      
+3. This process of thread acquiring a lock and entering a room is also known as threat `mutex`.       
 #### first way  of synchronization
-step1 : first we need to create a lock object and invoke l.acquire So the thread will acquire a lock on the current object.   
-Once it acquires the lock, until it invokes the release method no other thread can process or use the current object.
-step 2: `acquire()` it is use to acquire the lock.
-step 3 : `relase()` release lock of thread.   
+step1 : first we need to create a lock object and invoke l.acquire So the thread will acquire a lock on the current object.       
+Once it acquires the lock, until it invokes the release method no other thread can process or use the current object.  
+step 2: `acquire()` it is use to acquire the lock.    
+step 3 : `relase()` release lock of thread.     
 #### second way  of synchronization
-step 1 : use semaphore acquiring a lock but internally it uses a counter.  
-step 2: `acquire()` it is use to acquire the semaphore.    
-step 3 : `relase()` release semaphore of thread.   
+step 1 : use semaphore acquiring a lock but internally it uses a counter.           
+step 2: `acquire()` it is use to acquire the semaphore.            
+step 3 : `relase()` release semaphore of thread.         
 
 #### Thread Communication using wait, notifyall and notify   
-1. `wait(), notify() and notifyAll()`. So these methods are available on a class called Condition from the multi-threading API.  
-2. `condition()` is a class available from the threading module which we are going to use to communicate between threads conditionally.
-in Python 
-notifyAll method If multiple threads are waiting    
+1. `wait(), notify() and notifyAll()`. So these methods are available on a class called Condition from the multi-threading API.       
+2. `condition()` is a class available from the threading module which we are going to use to communicate between threads conditionally.      
+in Python notifyAll method If multiple threads are waiting      
