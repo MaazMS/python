@@ -1,27 +1,3 @@
-#### Downloading a HTML 
- 
-```  
-import urllib.request
-from  urllib import error
-try:
-	url = urllib.request.urlopen("https://wiki.python.org/moin/BeginnersGuide/Programmers ")
-	content = url.read()
-	url.close()
-except urllib.error.HTTPError:
-	print("not found")
-	exit()
-f = open("python.html", 'wb')
-f.write(content)
-f.close()
-```  
-
-#### Downloading Image 
-1. use same extension of image extension.  
-``` 
-import urllib.request
-url = "https://www.python.org/static/img/python-logo@2x.png"
-urllib.request.urlretrieve(url, "python.png")
-``` 
 #### socket programming
 we're going to establish the communication between the server and the client using the DCP IP protocol while doing socket programming.   
 
