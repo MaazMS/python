@@ -25,7 +25,7 @@ class RepeatedCharacter:
         flag = 1
         for i in range(len(s1)):
             if s1[i] == char:
-                flag = 1
+                flag = i
         if flag == 1:
             print("Sorry! We haven't found the Search Character in this string ")
         else:
