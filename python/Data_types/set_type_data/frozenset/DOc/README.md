@@ -1,6 +1,7 @@
 ### Frozenset
 * Frozenset is python in-built function.  
-* It is  an immutable.  
+* It is  an immutable.    
+* It takes an iterable object as input and makes them immutable. 
 ## Frozenset use 
 1. list 
 2. dictionary
