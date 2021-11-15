@@ -8,7 +8,5 @@
 1. Easy to code.  
 1. Free and Open Source.   
 1. High-level programming language. 
-1. GUI Programming Support.  
 1. Python is Portable language.  
-1. Python is Integrated language.  
 1. Python supports modules and packages.    
