@@ -51,9 +51,24 @@ input | output
 | 1\.1234567890123458    | 1\.1234567890123457    |
 | 1\.1234567890123459    | 1\.123456789012346     |   
 
-## Type Conversion    
+## Type Conversion      
+   
+* There are 2 types of type conversion in Python:
+1. Implicit Type Conversion (Type conversion)   
+1. Explicit Type conversion (Type Casting)   
 
-
+**Implicit Type Conversion (Type conversion)** : A data type is automatically converted into another data type is called Implicit Type Conversion (Type conversion).    
+**Explicit Type Casting (Type Casting)** : A data type is converted into another data type by the programmer is called Explicit Type cating (Type Casting).  
+#####  Type Conversion example  
+```bash
+x = 10  
+y = 20.0  
+sum = x + y   
+print(sum)   
+// value of "sum" 30.0 
+```    
+##### Type Casting Eample  
+   There are pre-defined functions in the python, such as `str()`, `int()`, `float()`, `list()`, `dict()`, `set()`, and `tuple()` that are used to convert one type of data into another.   
 * Converting Integers to Floats.      
 method float() will convert integers to floats. To use this function, add an integer inside of the parentheses. 
 **exaample**   
