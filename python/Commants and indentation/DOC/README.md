@@ -17,4 +17,4 @@ you can use multiple line string is string literals using **""" """** triple quo
 while(no>10)
     print(no)
 ```   
-* This is example of indentation while loop inside print statement.   
+* This is example of indentation while loop inside print statement.     
