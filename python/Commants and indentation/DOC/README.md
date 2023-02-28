@@ -1,9 +1,11 @@
 ### Comments  
 1. It can be used to explain python code.    
 2. It can be used to make to code readable.   
-3. It can be used prevent execution when testing code.(prevent : stop from doing something.)  
-* single Commants and indentation start with **#**   
-* multi line Commants and indentation use **#** for each line
+3. It can be used prevent execution when testing code.(prevent : stop from doing something.)     
+
+## Types Of Comments 
+* single Comments and indentation start with **#**   
+* multi line Comments and indentation use **#** for each line
 * python ignore string literals that are not assign to variable.
 you can use multiple line string is string literals using **""" """** triple quote.   
 
