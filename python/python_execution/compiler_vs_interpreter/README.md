@@ -1,18 +1,18 @@
-#### how language is translate and execute  
+#### how language is translated and execute  
 
 High level programming language convert to machine language in two ways as  
 1. Compilers   
 2. Interpreters   
 
-**Compilers**   
+### Compilers      
 Convert high level program to its machine or CPU instruction sets I,e machine bytecode. Therefore to do this compiler   
 checks for its syntax first and convert whole program to machine or CPU understandable bytecode.      
 
 Ex: c, c++, Java
 
-**Interpreters**   
-Interpreters work differently , they take each expression or line of program and convert to machine code and execute it.   
-Therefore if any syntax error in some line of interpreted language, you will get error only when that line is encountered.   
+### Interpreters 
+Interpreters  work differently , they take each expression or line of program and convert to machine code and execute it.   
+Therefore, if any syntax error in some line of interpreted language, you will get error only when that line is encountered.   
 
 step 1 : check python first line  syntax and compile.  
 step 2 : compiled is correct then convert into bytecode.   
