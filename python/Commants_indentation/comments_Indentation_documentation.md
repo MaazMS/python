@@ -3,6 +3,7 @@
 ## 1. Comments, Types of Comments and Indentation - Definitions and Characteristics
 
 ### Comments Definition
+
 Comments are non-executable text in Python code that serve to document and explain the code. They are ignored by the Python interpreter during execution.
 
 ### Comments Characteristics
@@ -15,6 +16,7 @@ Comments are non-executable text in Python code that serve to document and expla
 ### Types of Comments
 
 #### 1. Single-Line Comments
+
 - Start with the `#` symbol
 - Everything after `#` on that line is ignored
 - Can be on their own line or at the end of a code line
@@ -25,6 +27,7 @@ print("Hello World")  # This is an inline comment
 ```
 
 #### 2. Multi-Line Comments
+
 - Use `#` at the beginning of each line
 - Each line needs its own `#` symbol
 
@@ -36,6 +39,7 @@ print("Multi-line comments example")
 ```
 
 #### 3. Docstrings (Documentation Strings)
+
 - Use triple quotes `"""` or `'''`
 - Primarily used for function, class, and module documentation
 - Can be accessed programmatically using `__doc__` attribute
@@ -55,6 +59,7 @@ def calculate_area(radius):
 ```
 
 #### 4. Inline Comments
+
 - Comments placed at the end of a line of code
 - Should be separated by at least two spaces from the code
 
@@ -64,9 +69,11 @@ y = x * 2  # Double the value
 ```
 
 ### Indentation Definition
+
 Indentation refers to the whitespace (spaces or tabs) at the beginning of a code line. In Python, indentation is not just for readability—it's syntactically significant.
 
 ### Indentation Characteristics
+
 - **Structural**: Defines code blocks and hierarchy
 - **Mandatory**: Required for proper Python syntax
 - **Consistent**: Must be consistent within the same block
@@ -74,6 +81,7 @@ Indentation refers to the whitespace (spaces or tabs) at the beginning of a code
 - **Scope**: Determines variable scope and code execution flow
 
 ### Indentation Rules
+
 1. **Standard**: 4 spaces per indentation level (PEP 8 recommendation)
 2. **Consistency**: All lines in the same block must have the same indentation
 3. **Nesting**: Each nested level adds one more indentation level
@@ -94,6 +102,7 @@ if True:
 ### Comment Operations
 
 #### Adding Comments for Code Documentation
+
 ```python
 # Variable declarations with explanatory comments
 name = "John Doe"  # Store user's full name
@@ -120,6 +129,7 @@ def calculate_grade(score):
 ```
 
 #### Commenting for Algorithm Explanation
+
 ```python
 def bubble_sort(arr):
     """
@@ -153,6 +163,7 @@ def bubble_sort(arr):
 ### Indentation Operations
 
 #### Control Flow Indentation
+
 ```python
 # Conditional statements with proper indentation
 def check_number(num):
@@ -173,6 +184,7 @@ def check_number(num):
 ```
 
 #### Loop Indentation
+
 ```python
 # Nested loops with proper indentation
 def multiplication_table():
@@ -189,6 +201,7 @@ def multiplication_table():
 ### Comment Writing Methods
 
 #### Method 1: Explanatory Comments
+
 ```python
 # Method: Explain what the code does
 def fibonacci_sequence(n):
@@ -209,6 +222,7 @@ def fibonacci_sequence(n):
 ```
 
 #### Method 2: Purpose and Intent Comments
+
 ```python
 # Method: Explain why the code exists and its purpose
 def validate_email(email):
@@ -226,6 +240,7 @@ def validate_email(email):
 ```
 
 #### Method 3: Docstring Methods
+
 ```python
 def advanced_calculator(operation, *args, **kwargs):
     """
@@ -258,6 +273,7 @@ def advanced_calculator(operation, *args, **kwargs):
 ### Indentation Methods
 
 #### Method 1: Consistent Spacing Method
+
 ```python
 # Method: Use consistent 4-space indentation throughout
 def process_student_grades():
@@ -289,6 +305,7 @@ def process_student_grades():
 ### Comment Errors
 
 #### Error 1: Outdated or Misleading Comments
+
 ```python
 # ❌ WRONG: Comment doesn't match the code
 def calculate_area(radius):
@@ -302,6 +319,7 @@ def calculate_area(radius):
 ```
 
 #### Error 2: Over-commenting Obvious Code
+
 ```python
 # ❌ WRONG: Unnecessary comments for obvious code
 x = 5  # Set x to 5
@@ -319,6 +337,7 @@ print(z)
 ```
 
 #### Error 3: Using Comments Instead of Good Code
+
 ```python
 # ❌ WRONG: Comments to explain bad variable names
 def calc(x, y, z):
@@ -336,6 +355,7 @@ def calculate_compound_interest(principal, interest_rate, time_years):
 ### Indentation Errors
 
 #### Error 1: Inconsistent Indentation
+
 ```python
 # ❌ WRONG: Mixed spaces and inconsistent indentation
 def bad_indentation():
@@ -356,6 +376,7 @@ def good_indentation():
 ```
 
 #### Error 2: Missing Indentation
+
 ```python
 # ❌ WRONG: Missing required indentation
 def missing_indentation():
@@ -375,6 +396,7 @@ def correct_indentation():
 ```
 
 #### Error 3: Mixing Tabs and Spaces
+
 ```python
 # ❌ WRONG: Mixing tabs and spaces (causes TabError)
 def mixed_indentation():
@@ -392,6 +414,7 @@ def spaces_only():
 ### Best Practices Summary
 
 #### Comments Best Practices
+
 1. Write comments that explain WHY, not WHAT
 2. Keep comments up-to-date with code changes
 3. Use TODO comments for future improvements
@@ -400,6 +423,7 @@ def spaces_only():
 6. Remove commented-out code before production
 
 #### Indentation Best Practices
+
 1. Use 4 spaces per indentation level (PEP 8)
 2. Be consistent throughout your codebase
 3. Never mix tabs and spaces
@@ -408,7 +432,8 @@ def spaces_only():
 6. Use IDE/editor with indentation guides
 
 #### Error Prevention Tips
-1. Use a good code editor with syntax highlighting
+
+update program 'comments_Indentation_program.py' based on 'comments_Indentation_documentation.md' 1. Use a good code editor with syntax highlighting
 2. Enable indentation guides in your IDE
 3. Use linting tools like pylint or flake8
 4. Set up your editor to show whitespace characters
