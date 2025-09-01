@@ -1,10 +1,10 @@
-#### Regular expressions  
+# Regular expressions  
 
 Regular expressions also known as` REGX `are a bunch of characters or a pattern that will create to search for a string
 within a given string or to validate the given string For example we can use a regular expression to validate the email  
 that is entered by the user a password that the user enters etc.
 
-#### Sequence Characters  
+## Sequence Characters  
 
 1. The regular expression syntax define some special characters called sequence characters that we can use to match a single
 character in a given string.  
@@ -19,7 +19,7 @@ character in a given string.
 10.`\A` matches only at the start of the string it will do a search right at the beginning of the string
 11.`\Z` matches only at the end of the string.
 
-#### search
+### search
 
 The search method takes a regular expression and it searches for that format in the given string and it returns the very
 first sub-string within the given string that matches that pattern once the result is returned back.  

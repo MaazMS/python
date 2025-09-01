@@ -23,7 +23,7 @@ step 3 : The byte code is execute.
 step 4 : step 1 to step 3 are repeated if syntax error is show  by compiler Then
 step 5 : compiler is show syntax error and program is stop.
 
-example [here](https://github.com/MaazMS/python/blob/master/python/concept_of_interpreter/interpreter_example.py)
+example [interpreter_example.py](https://github.com/MaazMS/python/blob/master/python/concept_of_interpreter/interpreter_example.py)
 In this example line number 5 **print(a)** a is not define there for line 1 to line number 4 are execute but line number
 5 syntax error the program is stop and line number 6  is not execute.
-![](https://github.com/MaazMS/python/blob/master/python/images/interpreter_example.png?raw=true)
+![Python interpreter execution example showing syntax error stopping execution](https://github.com/MaazMS/python/blob/master/python/images/interpreter_example.png?raw=true)
