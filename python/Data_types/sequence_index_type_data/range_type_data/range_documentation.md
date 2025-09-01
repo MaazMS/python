@@ -3,9 +3,11 @@
 ## 1. Range Type Data Definition and Characteristics
 
 ### Definition
+
 The `range` type in Python is an immutable sequence type that represents a sequence of numbers. It is commonly used for looping a specific number of times in for loops.
 
 ### Characteristics
+
 - **Immutable**: Once created, range objects cannot be modified
 - **Memory Efficient**: Range objects don't store all values in memory, they generate values on-demand
 - **Lazy Evaluation**: Values are computed only when needed
@@ -14,6 +16,7 @@ The `range` type in Python is an immutable sequence type that represents a seque
 - **Step Support**: Supports custom step values (increment/decrement)
 
 ### Syntax
+
 ```python
 range(stop)                    # range(5) -> 0, 1, 2, 3, 4
 range(start, stop)             # range(1, 5) -> 1, 2, 3, 4
@@ -25,6 +28,7 @@ range(start, stop, step)       # range(1, 10, 2) -> 1, 3, 5, 7, 9
 ### Basic Range Creation
 
 #### Single Parameter (stop)
+
 ```python
 # Creates range from 0 to n-1
 numbers = range(5)
@@ -36,6 +40,7 @@ for i in range(3):
 ```
 
 #### Two Parameters (start, stop)
+
 ```python
 # Creates range from start to stop-1
 numbers = range(2, 8)
@@ -47,6 +52,7 @@ print(list(numbers))  # Output: [-3, -2, -1, 0, 1, 2]
 ```
 
 #### Three Parameters (start, stop, step)
+
 ```python
 # Positive step
 numbers = range(1, 10, 2)
@@ -62,6 +68,7 @@ print(list(numbers))  # Output: [10, 8, 6, 4, 2]
 ### Special Range Creations
 
 #### Empty Range
+
 ```python
 # When start >= stop (with positive step)
 empty_range = range(5, 5)
@@ -73,6 +80,7 @@ print(list(empty_range))  # Output: []
 ```
 
 #### Large Range
+
 ```python
 # Memory efficient for large ranges
 large_range = range(1000000)
@@ -83,6 +91,7 @@ print(len(large_range))  # Output: 1000000
 ## 3. Range Type Data Operations
 
 ### Indexing
+
 ```python
 r = range(10, 20)
 print(r[0])    # Output: 10 (first element)
@@ -91,6 +100,7 @@ print(r[3])    # Output: 13 (fourth element)
 ```
 
 ### Slicing
+
 ```python
 r = range(0, 10)
 print(r[2:5])     # Output: range(2, 5)
@@ -100,6 +110,7 @@ print(list(r[::2]))  # Output: [0, 2, 4, 6, 8]
 ```
 
 ### Membership Testing
+
 ```python
 r = range(1, 10, 2)
 print(5 in r)     # Output: True
@@ -108,6 +119,7 @@ print(1 in r)     # Output: True
 ```
 
 ### Iteration
+
 ```python
 # Using for loop
 for num in range(3, 8):
@@ -122,6 +134,7 @@ while i < len(r):
 ```
 
 ### Concatenation and Repetition
+
 ```python
 # Note: Direct concatenation not supported
 r1 = range(3)
@@ -139,6 +152,7 @@ print(list(combined))  # Output: [0, 1, 2, 3, 4, 5]
 ### Built-in Methods
 
 #### `count(value)`
+
 ```python
 r = range(1, 10, 2)  # [1, 3, 5, 7, 9]
 print(r.count(5))    # Output: 1
@@ -146,6 +160,7 @@ print(r.count(4))    # Output: 0 (4 is not in range)
 ```
 
 #### `index(value)`
+
 ```python
 r = range(10, 50, 5)  # [10, 15, 20, 25, 30, 35, 40, 45]
 print(r.index(25))    # Output: 3 (index of 25)
@@ -156,6 +171,7 @@ print(r.index(30))    # Output: 4 (index of 30)
 ### Properties
 
 #### `start`, `stop`, `step`
+
 ```python
 r = range(2, 20, 3)
 print(r.start)  # Output: 2
@@ -172,6 +188,7 @@ print(r2.step)   # Output: 1
 ### Utility Functions
 
 #### `len()`
+
 ```python
 r = range(1, 11)
 print(len(r))  # Output: 10
@@ -181,6 +198,7 @@ print(len(r2))  # Output: 9
 ```
 
 #### `reversed()`
+
 ```python
 r = range(1, 6)
 print(list(reversed(r)))  # Output: [5, 4, 3, 2, 1]
@@ -191,6 +209,7 @@ print(list(r2))  # Output: [5, 4, 3, 2, 1]
 ```
 
 #### `min()` and `max()`
+
 ```python
 r = range(10, 100, 10)
 print(min(r))  # Output: 10

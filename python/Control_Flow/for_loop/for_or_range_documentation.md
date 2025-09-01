@@ -34,7 +34,7 @@ for fruit in fruits:
 
 The `range()` function generates a sequence of numbers and is commonly used with for loops when you need to iterate a specific number of times or with numeric sequences.
 
-#### Characteristics
+#### Characteristics of range
 
 - Generates arithmetic sequences of integers
 - Memory efficient (creates numbers on-demand)

@@ -7,6 +7,7 @@
 Comments are non-executable text in Python code that serve to document and explain the code. They are ignored by the Python interpreter during execution.
 
 ### Comments Characteristics
+
 - **Documentation**: Explain what the code does and why
 - **Readability**: Make code easier to understand for humans
 - **Debugging**: Can temporarily disable code during testing
@@ -402,7 +403,7 @@ def correct_indentation():
 def mixed_indentation():
     if True:
         print("Spaces")  # Uses spaces
-	print("Tab")     # Uses tab - TabError!
+ print("Tab")     # Uses tab - TabError!
 
 # ✅ CORRECT: Use only spaces (recommended)
 def spaces_only():

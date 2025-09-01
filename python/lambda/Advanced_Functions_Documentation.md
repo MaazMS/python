@@ -7,6 +7,7 @@
 **Definition**: Lambda functions are anonymous functions defined using the `lambda` keyword. They can have any number of arguments but can only have one expression.
 
 #### Characteristics
+
 - Anonymous (no name required)
 - Single expression only
 - Returns a function object
@@ -89,7 +90,8 @@ lambda_vs_function_comparison()
 
 **Definition**: `filter()` creates an iterator from elements of an iterable for which a function returns True.
 
-#### Characteristics
+#### Characteristics of Filter
+
 - Returns a filter object (iterator)
 - Filters elements based on a condition
 - First argument: function that returns True/False
@@ -154,7 +156,8 @@ filter_characteristics()
 
 **Definition**: `map()` applies a function to every item of an iterable and returns an iterator.
 
-#### Characteristics
+#### Characteristics of Map
+
 - Returns a map object (iterator)
 - Applies function to each element
 - Can work with multiple iterables
@@ -1303,4 +1306,3 @@ def best_practices_summary():
 
 best_practices_summary()
 ```
-

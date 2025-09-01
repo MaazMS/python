@@ -1,10 +1,10 @@
-### Recursion 
+# Recursion
+
 1. Recursion is the process of a function calling itself.  
 2. you should use recursion complex problems like traversing trees, binary trees etc.  
-**Note** It is not a good candidate for everything.   
+**Note** It is not a good candidate for everything.
 
-### Example of Recursion
-``` 
+```python
 def factorial(no):
     if no== 0:
         result = 1
