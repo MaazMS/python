@@ -88,7 +88,8 @@ lambda_vs_function_comparison()
 
 ### 1.2 Filter Function
 
-**Definition**: `filter()` creates an iterator from elements of an iterable for which a function returns True.
+**Definition**: `filter()` creates an iterator from elements of an iterable for which a function returns True. 
+The filter() function is used to filter out elements from a sequence (like a list, tuple, or string),keeping only those that match a condition.
 
 #### Characteristics of Filter
 
